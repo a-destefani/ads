@@ -4123,4 +4123,51 @@ html.no-csstransitions .home-content__main {
 
 }
 
+/* -------------------------------------------------------------------
+ * home: keep the photo vertically centered on the hero background
+ * (desktop layouts; below 1200px the stacked layout is unchanged)
+ * ------------------------------------------------------------------- */
+@media only screen and (min-width:1201px) {
+  .s-home {
+    display: flex;
+    min-height: 788px;
+  }
+
+  .home-content {
+    display: flex;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 9.6rem;
+  }
+
+  .home-content__main {
+    display: flex;
+    align-items: center;
+    width: 89%;
+    padding-bottom: 0;
+  }
+
+  .home-content__left {
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 0;
+    margin-right: 6rem;
+  }
+
+  .home-content__right {
+    position: static;
+    flex: 0 0 auto;
+    right: auto;
+    top: auto;
+  }
+
+  .home-content__right img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+
 /*# sourceMappingURL=main.csxmap */
